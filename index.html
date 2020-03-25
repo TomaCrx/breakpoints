@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Breakpoints</title>
+	<link rel="stylesheet" href="master.css">
+
+	<script>
+    window.onresize = displayWindowSize;
+    window.onload = displayWindowSize;
+
+    function displayWindowSize() {
+        myWidth = window.innerWidth;
+        myHeight = window.innerHeight;
+        // your size calculation code here
+        document.getElementById("dimensions").innerHTML = myWidth + "x" + myHeight;
+    };
+</script>
+</head>
+<body>
+
+	<div id="main">
+		
+		<div id="header">
+			<article>
+				<p id="rouge">(min-width: 1681px)</p>
+				<p id="orange">(min-width: 1366px) and (max-width: 1680px)</p>
+				<p id="bleu">(min-width: 1024px) and (max-width: 1365px)</p>
+				<p id="vert">(min-width: 768px ) and (max-width: 1023px)</p>
+				<p id="jaune">(max-width: 767px)</p>
+			</article>
+
+			<article>
+				<p id="dimensions"></p>
+			</article>
+
+			<article>
+			</article>
+		</div> <!-- header -->
+
+		<div id="content">
+			<article>
+				<p>
+					Le brutalisme désigne un style architectural issu du mouvement moderne, qui connaît une grande popularité entre les années 1950 et 1970 avant de décliner peu à peu, bien que divers architectes s'inspirent encore des principes de ce courant. Il se distingue notamment par la répétition de certains éléments comme les fenêtres, ainsi que par l'absence d'ornements et le caractère « brut » du béton.
+					<br>
+					Les premiers exemples d'architecture brutaliste sont inspirés des travaux de l'architecte franco-suisse Le Corbusier, notamment de sa Cité radieuse (1952). Parallèle au mouvement artistique du pop art, le brutalisme s'exprime notamment à travers la réalisation de bâtiments institutionnels et d'universités au Royaume-Uni, en France, en Europe de l'Est et aux États-Unis. Généralement de dimensions imposantes, ces édifices mettent en avant leur verticalité et la rudesse du béton, constituant une réaction aux courants architecturaux antérieurs (le style Beaux-Arts notamment), marqués par davantage de frivolité.
+					<br>
+					Le terme de brutalisme a parfois servi à désigner de manière générale les édifices massifs en béton, devenus impopulaires à la fin du XXe siècle. Les principaux représentants de ce courant sont Marcel Breuer, Erno Goldfinger, Jacques Kalisz, Bertrand Goldberg et Fernand Boukobza. 
+				</p>
+			</article>
+
+			<article>
+				<p>
+					Le terme « brutalisme » vient du français « brut ». Le « béton brut » est le terme employé par Le Corbusier, qui voit dans ce matériau de construction un aspect sauvage, naturel et primitif lorsqu'il est utilisé sans transformation.
+					<br>
+					La première utilisation du terme reviendrait à l'architecte suédois Hans Asplund, qui l'aurait employé en 1949 pour décrire une villa (la Villa Göth) réalisée à Uppsala par ses pairs Bengt Edman et Lennart Holm. Il a ainsi évoqué un « nybrutalism » (« nouveau brutalisme » en suédois), et l'expression aurait été importée en Angleterre par un groupe d'architectes britanniques alors en visite en Suède, dont faisait notamment partie Michael Ventris4.
+					<br>
+					Par la suite, les architectes anglais Alison et Peter Smithson auraient utilisé ce terme par antiphrase en 1954 ; Peter Smithson se faisant même appeler Brutus en hommage au sénateur romain qui a tué César pour sauver la République romaine.
+					<br>
+					Toutefois, le terme ne devient véritablement populaire et positif à ses débuts qu'avec la parution de The New Brutalism : Ethic or Aesthetic ?, un ouvrage de 1966 du critique Reyner Banham qui emploie le mot pour désigner la révolution architecturale en cours en Angleterre. Selon Banham, le brutalisme ne servait pas tant à désigner un style architectural à part entière qu'un état d'esprit partagé par les architectes composant le mouvement. En outre, le terme provient de la critique et n'était que peu employé par les représentants de ce genre eux-mêmes.
+				</p>
+			</article>
+
+			<article>
+				<p>
+					L'inspiration initiale de ce mouvement issu du mouvement moderne provient des formes développées par Ludwig Mies van der Rohe, ainsi que de l'œuvre architecturale de Le Corbusier. Ce dernier est le principal représentant de l'architecture « proto-brutaliste », notamment à travers deux réalisations : l'Unité d'habitation (1952), développée dans divers projets dont la Cité radieuse de Marseille ; le Palais de l'Assemblée à Chandigarh en Inde (1953). Dans un entretien avec Georges Charensol en 1962, il déclare avoir créé un « romantisme du mal foutu ».
+					<br>
+					Dans les années qui suivent, le brutalisme voit sa popularité croître au Royaume-Uni, notamment sous l'influence d'Alison et Peter Smithson. Dans un pays encore en partie détruit par les bombardements de la Seconde Guerre mondiale et qui connait une récession économique, les pouvoirs publics tentent de promouvoir des modes de construction bon marché pour l'habitat, les espaces commerciaux et les bâtiments publics. Toutefois, de nombreux architectes ont adopté le style brutaliste bien qu'ils aient disposé d'importants budgets, en raison de leur goût pour ses caractéristiques « crues » et sans ornement. 
+				</p>
+			</article>
+		</div> <!-- content -->
+
+
+	</div> <!-- main -->
+	
+</body>
+</html>
