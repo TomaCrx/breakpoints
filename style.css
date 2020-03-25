@@ -1,112 +1,61 @@
 @media (min-width: 1681px) {
-
-
-
-	#content{
-		background-color: #ff6666;
-	}
-
-	#orange, #bleu, #vert, #jaune{
-		display: none;
-	}
-
-} /*(min-width: 1601px)*/
+	/*ROUGE*/
+	#content{background-color: #ff6666;}
+	.orange, .bleu, .vert, .jaune, .rose{display: none;}
+}/*(min-width: 1681px)*/
 
 @media (min-width: 1366px) and (max-width: 1680px) {
-
-	#rouge, #bleu, #vert, #jaune{
-		display: none;
-	}
-
-
-
-	#content{
-		background-color: #ffaa80;
-	}
-} /*(min-width: 1201px) and (max-width: 1600px)*/
+	/*ORANGE*/
+	.rouge, .bleu, .vert, .jaune, .rose{display: none;}
+	#content{background-color: #ffaa80;}
+}/*(min-width: 1366px) and (max-width: 1680px)*/
 
 @media (min-width: 1024px) and (max-width: 1365px) {
-	#rouge, #orange, #vert, #jaune{
-		display: none;
-	}
-
-
-	#content{
-		background-color: #8080ff;
-	}
-
-
-} /*(min-width: 901px) and (max-width: 1200px)*/
-
+	/*BLEU*/
+	.rouge, .orange, .vert, .jaune, .rose{display: none;}
+	#content{background-color: #8080ff;}
+}/*(min-width: 1024px) and (max-width: 1365px)*/
 
 @media (min-width: 768px ) and (max-width: 1023px) {
+	/*VERT*/
+	.rouge, .orange, .bleu, .jaune, .rose{display: none;}
+	#content{background-color: #75f075;}
+}/*(min-width: 768px ) and (max-width: 1023px)*/
 
-	#rouge, #orange, #bleu, #jaune{
-		display: none;
-	}
+@media (min-width: 568px ) and (max-width: 767px) {
+	/*JAUNE*/
+	.rouge, .orange, .bleu, .vert, .rose{display: none;}
+	#content{background-color: #ffff99;}
+}/*(min-width: 568px ) and (max-width: 767px)*/
 
+@media (max-width: 567px ) {
+	/*ROSE*/
+	.rouge, .orange, .bleu, .vert, .jaune{display: none;}
+	#content{background-color: #ff80df;}
+}/*(max-width: 567px )*/
 
-
-	#content{
-		background-color: #75f075;
-	}
-
-
-} /*(min-width: 601px) and (max-width: 900px)*/
-
-@media (max-width: 767px) {
-	#rouge, #orange, #bleu, #vert{
-		display: none;
-	}
-
-
-	#content{
-		background-color: #ffff99;
-	}
-
-
-
-} /*(max-width: 601px)*/
 
 
 body{
 	font-family: sans-serif;
 }
 
-#main{
-/*	background-color: #4d4dff;*/
+#header, #content{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
 }
 
 #header{
 	height: 10vh;
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
 	align-items: center;
-
-/*	background-color: #4d4dff;*/
-	
 }
 
-#header article{
-	margin: 10px;
+article{
 	width: 30%;
-	height: 6vh;
-	
 	border: 1px solid black;
 }
 
-#content{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-
-	/*background-color: #8080ff;*/	
-}
-
-#content article{
-	margin: 10px;
-	width: 30%;
-
-	border: 1px solid black;
+p{
+	margin: 5px;
 }
